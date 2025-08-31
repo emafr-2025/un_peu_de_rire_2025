@@ -24,7 +24,14 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
-
+        <div className="w-full max-w-[900px] h-[80vh] border rounded-lg">
+          <iframe
+            src="https://udify.app/chatbot/BvR9OpA4JxXlHd5X"
+            style="width: 100%; height: 100%; min-height: 700px"
+            frameborder="0"
+            allow="microphone">
+          </iframe>
+        </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
