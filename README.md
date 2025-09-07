@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# あんぷうどり
 
-## Getting Started
+発達障害のお子さんを持つお母さんを笑顔にするためのWebサイトです。AIチャット相談とポッドキャスト配信を通じて、同じ悩みを持つ方々に寄り添います。
 
-First, run the development server:
+## 🌟 主な機能
+
+- **しゅえっとくん**: GPT-4o-miniを活用したAI相談チャット
+- **あんぷうどりカフェ**: ポッドキャスト再生・エピソード一覧
+- **おこっちゃうんです道場**: コミュニケーション練習の場
+- **エピソード募集**: Google Formを使った体験談投稿
+- **制作者の想い**: アコーディオン形式での想い紹介
+
+## 🚀 開発環境セットアップ
+
+### 必要な環境変数
+
+`.env.local` ファイルを作成し、以下を設定：
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Dify API Configuration
+NEXT_PUBLIC_DIFY_API_KEY=your_dify_api_key_here
+NEXT_PUBLIC_DIFY_BASE_URL=https://api.dify.ai/v1
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 開発サーバー起動
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+開発サーバーは [http://localhost:3001](http://localhost:3001) で起動します。
 
-## Learn More
+## 🚀 Vercel デプロイメント
 
-To learn more about Next.js, take a look at the following resources:
+本番環境への完全デプロイガイド：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**📋 [DEPLOYMENT.md](./DEPLOYMENT.md)** - 詳細なデプロイ手順
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### クイックデプロイ
 
-## Deploy on Vercel
+1. GitHubリポジトリをVercelに Import
+2. 環境変数を設定：
+   - `NEXT_PUBLIC_DIFY_API_KEY`
+   - `NEXT_PUBLIC_DIFY_BASE_URL`
+3. 自動デプロイ完了
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 動作確認チェックリスト
+- [ ] `/` - ホームページ表示
+- [ ] `/dojo` - 道場ページ表示  
+- [ ] `/request` - エピソード募集フォーム
+- [ ] しゅえっとくんチャット機能
+- [ ] ポッドキャスト再生機能
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠 技術スタック
+
+- **Framework**: Next.js 15.5.2 (App Router)
+- **Language**: TypeScript
+- **Styling**: CSS Modules + Tailwind CSS
+- **AI**: Dify API (GPT-4o-mini)
+- **Deployment**: Vercel
+- **Audio**: HTML5 Audio API
+
+## 📁 プロジェクト構造
+
+```
+├── app/                  # App Router pages
+│   ├── api/chat/        # Dify API integration
+│   ├── dojo/            # 道場ページ
+│   └── request/         # エピソード募集
+├── components/          # React components
+├── lib/                 # Utility functions
+├── public/              # Static assets
+├── types/               # TypeScript definitions
+└── DEPLOYMENT.md        # Vercel deployment guide
+```

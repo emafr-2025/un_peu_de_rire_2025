@@ -1,0 +1,66 @@
+.section {
+  margin-top: 32px;
+}
+
+.heading {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 16px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  height: 80vh;
+  min-height: 600px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.iframe:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: -2px;
+}
+
+/* Hide Dify RAG source citations and knowledge file references */
+.iframe :global([class*="citation"]),
+.iframe :global([class*="source"]),
+.iframe :global([class*="knowledge"]),
+.iframe :global([data-testid*="citation"]),
+.iframe :global([data-testid*="source"]) {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-top: 24px;
+  }
+
+  .heading {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: 60vh;
+    min-height: 400px;
+  }
+}

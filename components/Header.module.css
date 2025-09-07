@@ -1,0 +1,112 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: #059669;
+}
+
+.logoContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImage {
+  object-fit: contain;
+}
+
+.logoText {
+  color: inherit;
+}
+
+.nav {
+  flex: 1;
+  max-width: 600px;
+  margin-left: 32px;
+}
+
+.navList {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #6b7280;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.navLink:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+.navLink[aria-current="page"] {
+  background-color: #059669;
+  color: #ffffff;
+}
+
+.navLink[aria-current="page"]:hover {
+  background-color: #047857;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 24px;
+    min-height: auto;
+  }
+
+  .nav {
+    margin-left: 0;
+    margin-top: 12px;
+    max-width: none;
+    width: 100%;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .navLink {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+  }
+}
