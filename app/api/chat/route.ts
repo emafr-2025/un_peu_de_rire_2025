@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const DIFY_API_KEY = process.env.NEXT_PUBLIC_DIFY_API_KEY;
-const DIFY_BASE_URL = process.env.NEXT_PUBLIC_DIFY_BASE_URL;
+const DIFY_API_KEY = process.env.DIFY_API_KEY;
+const DIFY_BASE_URL = process.env.DIFY_API_URL;
 
 export async function POST(request: NextRequest) {
   console.log("API called, checking env vars:", {
