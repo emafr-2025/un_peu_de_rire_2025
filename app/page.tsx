@@ -47,10 +47,13 @@ export default function HomePage() {
         {/* Welcome Section */}
         <header className={styles.pageHeader}>
           <div className={styles.welcomeSection}>
-            <h1 className={styles.pageTitle}>あんぷうどり</h1>
+            <h1 className={styles.pageTitle}>
+              あんぷうどり
+              <span className={styles.subtitle}>～un peu de rire～</span>
+            </h1>
             <p className={styles.pageSubtitle}>
               「良妻賢母」じゃなくていい。<br/>
-               私は ―― 「勤妻笑母」勤勉な妻で、笑う母でありたい。
+               私は ―― 笑う母でありたい。
             </p>
             
             {/* Site Description */}

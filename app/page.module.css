@@ -42,6 +42,16 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.subtitle {
+  display: block;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
 .coffeeIcon {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
   animation: steam 2s ease-in-out infinite alternate;
