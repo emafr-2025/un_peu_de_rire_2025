@@ -4,9 +4,22 @@ const DIFY_API_KEY = process.env.NEXT_PUBLIC_DIFY_API_KEY;
 const DIFY_BASE_URL = process.env.NEXT_PUBLIC_DIFY_BASE_URL;
 
 export async function POST(request: NextRequest) {
+  console.log("API called, checking env vars:", {
+    hasKey: !!DIFY_API_KEY,
+    hasUrl: !!DIFY_BASE_URL,
+    url: DIFY_BASE_URL
+  });
+  
   if (!DIFY_API_KEY) {
     return NextResponse.json(
       { error: "Dify API key is not configured" },
+      { status: 500 }
+    );
+  }
+  
+  if (!DIFY_BASE_URL) {
+    return NextResponse.json(
+      { error: "Dify base URL is not configured" },
       { status: 500 }
     );
   }
