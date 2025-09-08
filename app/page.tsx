@@ -50,7 +50,7 @@ export default function HomePage() {
             <h1 className={styles.pageTitle}>あんぷうどり</h1>
             <p className={styles.pageSubtitle}>
               「良妻賢母」じゃなくていい。<br/>
-               私は ―― 勤勉な妻で、笑う母でありたい。
+               私は ―― 「勤妻笑母」勤勉な妻で、笑う母でありたい。
             </p>
             
             {/* Site Description */}
