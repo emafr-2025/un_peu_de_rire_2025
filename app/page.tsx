@@ -55,7 +55,7 @@ export default function HomePage() {
             
             {/* Site Description */}
             <div className={styles.siteDescription}>
-              <h2 className={styles.siteDescriptionTitle}>このサイトについて</h2>
+              <h2 className={styles.siteDescriptionTitle}></h2>
               <p className={styles.siteDescriptionText}>
                 ここは、そんな想いを持つお母さんに元気を届ける場です。<br/>
                 ① <strong>しゅえっとくん</strong> ― 誰かに話を聞いてほしい！<br/>

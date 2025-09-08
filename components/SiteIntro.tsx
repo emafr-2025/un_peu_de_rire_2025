@@ -45,7 +45,6 @@ export default function SiteIntro() {
         aria-expanded={isMobile ? undefined : isExpanded}
         aria-controls={isMobile ? undefined : "site-intro-content"}
       >
-        このサイトについて
         {!isMobile && (
           <span 
             className={styles.expandIcon} 
