@@ -62,9 +62,9 @@ export default function SiteIntro() {
       >
         <p className={styles.description}>
           ここは、そんな想いを持つお母さんに元気を届ける場です。<br/>
-          ① <strong>しゅえっとくん</strong> ― 誰かに話を聞いてほしい！<br/>
-           ② <strong>おこっちゃうんです道場</strong> ― 「どう言えばよかった？」の壁打ち練習<br/>
-           ③ <strong>あんぷうどりカフェ</strong> ― いつか武勇伝になる笑いを！<br/>
+          ① <strong>あんぷうどりカフェ</strong> ― いつか武勇伝になる笑いを！<br/>
+           ② <strong>しゅえっとくん</strong> ― 誰かに話を聞いてほしい！<br/>
+           ③ <strong>おこっちゃうんです道場</strong> ― 「どう言えばよかった？」の壁打ち練習<br/>
            ④ <strong>エピソード募集</strong> ― あなたの逸話をぜひ取り上げさせてください！
           </p>
       </div>
