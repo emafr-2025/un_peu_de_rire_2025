@@ -54,7 +54,7 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* Welcome Section */}
+      
         <header className={styles.pageHeader}>
           <div className={styles.welcomeSection}>
             <h1 className={styles.pageTitle}>
