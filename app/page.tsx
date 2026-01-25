@@ -10,6 +10,16 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function HomePage() {
+  return (
+    <main style={{ padding: 24 }}>
+      <h1>現在メンテナンス中です</h1>
+      <p>公開までしばらくお待ちください。</p>
+    </main>
+  );
+}
+
+/*
+export default function HomePage() {
   const [episodes, setEpisodes] = useState<Episode[]>([]);
   const [currentEpisode, setCurrentEpisode] = useState<Episode | null>(null);
   const [loading, setLoading] = useState(true);
@@ -136,3 +146,4 @@ export default function HomePage() {
     </div>
   );
 }
+*/
