@@ -66,7 +66,7 @@ export default function HomePage() {
                私は ―― 笑う母でありたい。
             </p>
             
-            {/* Site Description */}
+            
             <div className={styles.siteDescription}>
               <h2 className={styles.siteDescriptionTitle}></h2>
               <p className={styles.siteDescriptionText}>
@@ -78,12 +78,12 @@ export default function HomePage() {
               </p>
             </div>
             
-            {/* Creator Thoughts */}
+           
             <CreatorThoughts />
           </div>
         </header>
 
-        {/* Podcast Section */}
+       
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <Image 
@@ -111,7 +111,7 @@ export default function HomePage() {
           />
         </section>
 
-        {/* Chat Section */}
+        
         <section className={styles.section}>
           <div className={styles.sectionHeader}>
             <Image 
@@ -129,7 +129,7 @@ export default function HomePage() {
           <DifyChat />
         </section>
 
-        {/* Footer */}
+        
         <footer className={styles.footer}>
           <div className={styles.footerContent}>
             <Image 
